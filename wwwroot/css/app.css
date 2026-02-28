@@ -17,7 +17,7 @@ a, .btn-link {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .content {
@@ -112,120 +112,4 @@ code {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
-}
-
-
-
-
-
-
-/* Background when in preview */
-body.mobile-preview {
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
-}
-
-    /* The mobile frame */
-    body.mobile-preview .container-fluid,
-    body.mobile-preview .container {
-        width: 390px;
-        max-width: 390px;
-        min-height: 844px;
-        background: #fff;
-        border-radius: 40px;
-        padding: 20px;
-        box-shadow: 0 0 0 8px #111, 0 20px 50px rgba(0,0,0,0.6);
-    }
-
-    /* Let Bootstrap stack naturally */
-    body.mobile-preview .row {
-        --bs-gutter-x: 1rem;
-    }
-
-    /* Optional: prevent giant desktop spacing */
-    body.mobile-preview .col-lg-6,
-    body.mobile-preview .col-xl-6,
-    body.mobile-preview .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-
-
-
-
-
-
-
-/* Backdrop */
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* Modal box */
-.modal-box {
-    background: white;
-    padding: 24px;
-    border-radius: 16px;
-    width: 320px;
-    max-width: 90%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    animation: fadeIn 0.2s ease-in-out;
-}
-
-    .modal-box h3 {
-        margin-bottom: 12px;
-    }
-
-    .modal-box p {
-        margin-bottom: 20px;
-    }
-
-/* Buttons */
-.modal-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.btn-cancel {
-    background: #ccc;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.btn-delete {
-    background: #d9534f;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-    .btn-delete:hover {
-        background: #c9302c;
-    }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
